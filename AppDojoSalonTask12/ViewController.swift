@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        taxTextField.text = defaults.string(forKey: Key.taxKey)
+        taxTextField.text = defaults.string(forKey: UserDefaultsKey.tax)
     }
 
     
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         let taxIncludedPrice = Int(price * (tax / 100 + 1) )
         taxIncludedPriceLabel.text = String(taxIncludedPrice)
         
-        defaults.set(String(tax), forKey: Key.taxKey)
+        defaults.set(String(tax), forKey: UserDefaultsKey.tax)
     }
 }
 

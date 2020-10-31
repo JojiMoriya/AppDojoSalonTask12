@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum Key {
-    static let taxKey: String = "defaultTax"
+enum UserDefaultsKey {
+    static let tax: String = "defaultTax"
 }
